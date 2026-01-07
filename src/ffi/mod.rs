@@ -55,8 +55,10 @@ pub enum Arch {
     HEXAGON = 8,
     /// Ethereum Virtual Machine architecture.
     EVM = 9,
+    /// RISC-V architecture.
+    RISCV = 10,
     /// Maximum value for the architecture enum.
-    MAX = 10,
+    MAX = 11,
 }
 
 bitflags! {
@@ -95,6 +97,10 @@ bitflags! {
         const PPC64 = 8;
         /// PPC - Quad Processing eXtensions mode.
         const QPX = 16;
+        /// RISCV - 32-bit mode.
+        const RISCV32 = 4;
+        /// RISCV - 64-bit mode.
+        const RISCV64 = 8;
         /// PPC - 32-bit mode.
         const SPARC32 = 4;
         /// SPARC - 64-bit mode.

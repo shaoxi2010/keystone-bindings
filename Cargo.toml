@@ -1,6 +1,6 @@
 [package]
 name = "keystone-engine"
-version = "0.1.0"
+version = "0.1.1"
 author = ["lyte <maxime.peterlin@impalabs.fr>"]
 edition = "2021"
 description = "Rust bindings for the Keystone Engine assembler library."
@@ -22,6 +22,7 @@ cmake = { optional = true, version = "0.1" }
 pkg-config = { optional = true, version = "0.3" }
 
 [features]
-default = ["build-from-src"]
+default = ["build-from-src", "fix-cmake"]
 use-system-lib = ["pkg-config"]
 build-from-src = ["cmake"]
+fix-cmake = []
